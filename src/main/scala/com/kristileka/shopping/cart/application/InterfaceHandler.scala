@@ -10,6 +10,7 @@ trait InterfaceHandler {
   println("")
   println("=> Welcome <=")
   println(s"=> Press the commend  ${Command.HELP}  to get a list of all operations <=")
+  shellWriter()
   def shellWriter(): Unit  = print("System> ")
   def goodByeShell(): Unit = println("Goodbye !")
 }
